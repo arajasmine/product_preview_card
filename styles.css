@@ -44,6 +44,14 @@ body{
 }
 
 @media only screen and (hover: none) and (pointer: coarse){
+
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative;
+      }
+      
     .container{
         display: grid;
         height: 100vh;
