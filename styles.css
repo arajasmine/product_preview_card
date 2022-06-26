@@ -1,3 +1,44 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    margin: 0; /* removes google chrome's default margin and just fit on screen*/
+}
 
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1.8fr 1.3fr 1.3fr 1.8fr;
+    grid-template-rows: 0.9fr 2fr 1fr;
+    grid-template-areas:
+    "topspace topspace topspace topspace"
+    "leftspace image content1 rightspace"
+    "bottomspace bottomspace bottomspace bottomspace"
+}
+
+#topspace{
+    background: blue;
+    grid-area:topspace;
+}
+
+#leftspace{
+    background: red;
+    grid-area:leftspace;
+}
+
+#image{
+    background: yellow;
+    grid-area:image;
+}
+
+#content{
+    background: gray;
+    grid-area:content1;
+}
+
+#rightspace{
+    background: violet;
+    grid-area:rightspace;
+}
+
+#bottomspace{
+    background: green;
+    grid-area:bottomspace;
+}
