@@ -46,12 +46,13 @@ body{
 @media only screen and (max-width:375px){
     .container{
         display: grid;
-        height: 100vh;
+        width: 100vh;
+        grid-template-columns: 1;
         grid-template-rows: 0.5fr 1fr 2fr 0.5fr;
         grid-template-areas: 
         "topspace"
         "image"
-        "content"
+        "content1"
         "bottomspace";
     }
 }
