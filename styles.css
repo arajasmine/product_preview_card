@@ -54,6 +54,10 @@ body{
         overflow-x: hidden; 
     }
     
+    body {
+        position: relative;
+      }
+      
     .container{
         display: grid;
         width: 100vh;
