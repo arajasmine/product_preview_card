@@ -42,3 +42,16 @@ body{
     background: green;
     grid-area:bottomspace;
 }
+
+@media only screen and (max-width:375px){
+    .container{
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 0.5fr 1fr 2fr 0.5fr;
+        grid-template-areas: 
+        "topspace"
+        "image"
+        "content"
+        "bottomspace";
+    }
+}
