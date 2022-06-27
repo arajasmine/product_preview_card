@@ -3,6 +3,7 @@ body{
 }
 
 .container{
+    background:  hsl(30, 38%, 92%);
     display: grid;
     height: 100vh;
     grid-template-columns: 1.8fr 1.3fr 1.3fr 1.8fr;
@@ -37,10 +38,52 @@ body{
 }
 
 #content{
-    background: White: hsl(0, 0%, 100%);
-    grid-area:content1;
+    background: hsl(0, 0%, 100%);
+    grid-area: content1 ;
+    border-radius: 0px 15px 15px 0px;
 }
 
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 0fr 0fr 0fr 0fr;
+    grid-template-areas: 
+    "cat cat"
+    "title title"
+    "desc desc"
+    "price bprice"
+    "button button"
+}
+
+#category{
+    background:hsl(0, 0%, 100%);
+    grid-area: cat;
+}
+
+#title{
+    background: hsl(0, 0%, 100%);
+    grid-area: title;
+}
+
+#description{
+    background: hsl(0, 0%, 100%);
+    grid-area: desc;
+}
+
+#price{
+    background: hsl(0, 0%, 100%);
+    grid-area: price;
+}
+
+#bprice{
+    background: hsl(0, 0%, 100%);
+    grid-area: bprice;
+}
+
+#button{
+    background: hsl(0, 0%, 100%);
+    grid-area: button;
+}
 #rightspace{
     background:  hsl(30, 38%, 92%);
     grid-area:rightspace;
