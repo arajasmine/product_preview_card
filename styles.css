@@ -1,5 +1,5 @@
 body{
-    margin: 0;                         /* removes google chrome's default margin and just fit on screen*/
+    margin: 0;            /* removes google chrome's default margin and just fit on screen*/                  
 }
 
 .container{
@@ -24,7 +24,7 @@ body{
 }
 
 #image{
-    background: yellow;
+    background: hsl(30, 38%, 92%);
     grid-area:image;
 }
 
@@ -71,4 +71,12 @@ body{
         "rightspace"
         "bottomspace";
     }
+}
+
+#image > img {   /* Make Image Fit on CSS GRID */
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+    display: block;     /* Removes white space under image */
+    border-radius: 15px 0px 0px 15px;
 }
