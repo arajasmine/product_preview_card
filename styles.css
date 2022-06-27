@@ -79,9 +79,9 @@ body{
 }
 
 #title > p {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 10px;
-    line-height: 0;
+    line-height: 30px;
     font-family: 'Fraunces', serif;
     font-weight: 700;
     font-size: 32px;
@@ -94,9 +94,10 @@ body{
 }
 
 #description > p{
+    margin-top: -5px;
     margin-left: 10px;
     font-family: 'Montserrat', sans-serif;
-    line-height: 10px;
+    line-height: 25px;
     font-weight: 500;
     font-size: 14px;
     color: hsl(228, 12%, 48%);
@@ -108,7 +109,7 @@ body{
 }
 
 #price > p{
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 10px;
     font-family: 'Fraunces';
     font-weight: 700;
@@ -123,7 +124,7 @@ body{
 
 #bprice > p{
     margin-left: 24px;
-    margin-top: 30px;
+    margin-top: 17px;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 500;
@@ -174,32 +175,96 @@ button span {
 }
 
 @media only screen and (hover: none) and (pointer: coarse){     /* For Mobile View */
-
-    html,body
-    {
-        width: 100%;
-        height: 100%;                 /* To remove unnecessary bottom white space */
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden; 
+    body{
+        background: hsl(30, 38%, 92%);
     }
-
-    body {
-        position: relative;          /* To remove unnecessary bottom white space */
-      }
-      
+    .mobile-view{
+        display: none;
+    }
     .container{
+        background: hsl(30, 38%, 92%);
         display: grid;
-        width: 100vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0fr 1fr 2fr 0fr 0.5fr;
+        grid-template-columns: 5fr 90fr 5fr;
+        grid-template-rows: 4fr 40% 80fr 5fr;
         grid-template-areas: 
-        "topspace"
-        "leftspace"
-        "image"
-        "content1"
-        "rightspace"
-        "bottomspace";
+        "topspace topspace topspace"
+        "leftspace image rightspace"
+        "leftspace content1 rightspace"
+        "bottomspace bottomspace bottomspace";
+     }
+
+     #image > img {   /* Make Image Fit on CSS GRID */
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+        display: block;     /* Removes white space under image */
+        border-radius: 15px 15px 0px 0px;   /* For rounded corners */
     }
+    /* where content starts */
+
+    #content{
+        background: hsl(0, 0%, 100%);
+        grid-area: content1 ;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .container2{
+        background: hsl(30, 38%, 92%);
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr 0fr;
+        min-width: 0;
+        min-height: 0;
+        grid-template-areas: 
+        "cat cat"
+        "title title"
+        "desc desc"
+        "price bprice"
+        "button button";
+    }
+
+    #title > p {
+        margin-top: 5px;
+        margin-left: 10px;
+        line-height: 30px;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 32px;
+        color: hsl(212, 21%, 14%);
+    }
+
+    #description > p{
+        margin-top: -10px;
+        margin-left: 10px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 25px;
+        font-weight: 500;
+        font-size: 13px;
+        color: hsl(228, 12%, 48%);
+    }
+
+    #bprice > p{
+        margin-left: 10px;
+        margin-top: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%);
+    }
+    
+    #button > button{
+        margin-top: -15px;
+        margin-left: 10px;
+        border: none;
+        background-color: hsl(158, 36%, 37%);
+        width:95%;
+        padding: 15px;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    /* where content ends */
 }
 
