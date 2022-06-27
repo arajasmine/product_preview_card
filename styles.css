@@ -185,7 +185,7 @@ button span {
         background: hsl(30, 38%, 92%);
         display: grid;
         grid-template-columns: 5fr 90fr 5fr;
-        grid-template-rows: 4fr 40% 80fr 5fr;
+        grid-template-rows: 4fr 40% 80fr .2fr;
         grid-template-areas: 
         "topspace topspace topspace"
         "leftspace image rightspace"
@@ -240,10 +240,19 @@ button span {
         font-family: 'Montserrat', sans-serif;
         line-height: 25px;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 14px;
         color: hsl(228, 12%, 48%);
     }
 
+    #price > p{
+        margin-top: 18px;
+        margin-left: 10px;
+        font-family: 'Fraunces';
+        font-weight: 700;
+        font-size: 32px;
+        color: hsl(158, 36%, 37%);
+    }
+    
     #bprice > p{
         margin-left: 10px;
         margin-top: 30px;
