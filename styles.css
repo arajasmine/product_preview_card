@@ -185,7 +185,7 @@ button span {
         background: hsl(30, 38%, 92%);
         display: grid;
         grid-template-columns: 5fr 90fr 5fr;
-        grid-template-rows: 4fr 40% 80fr .2fr;
+        grid-template-rows: 4fr 40% 80fr 4fr;
         grid-template-areas: 
         "topspace topspace topspace"
         "leftspace image rightspace"
