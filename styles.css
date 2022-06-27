@@ -1,5 +1,5 @@
 body{
-    margin: 0; /* removes google chrome's default margin and just fit on screen*/
+    margin: 0;                         /* removes google chrome's default margin and just fit on screen*/
 }
 
 .container{
@@ -14,12 +14,12 @@ body{
 }
 
 #topspace{
-    background: blue;
+    background:  hsl(30, 38%, 92%);
     grid-area:topspace;
 }
 
 #leftspace{
-    background: red;
+    background:  hsl(30, 38%, 92%);
     grid-area:leftspace;
 }
 
@@ -34,28 +34,28 @@ body{
 }
 
 #rightspace{
-    background: violet;
+    background:  hsl(30, 38%, 92%);
     grid-area:rightspace;
 }
 
 #bottomspace{
-    background: green;
+    background:  hsl(30, 38%, 92%);
     grid-area:bottomspace;
 }
 
-@media only screen and (hover: none) and (pointer: coarse){
+@media only screen and (hover: none) and (pointer: coarse){     /* For Mobile View */
 
     html,body
     {
         width: 100%;
-        height: 100%;
+        height: 100%;                 /* To remove unnecessary bottom white space */
         margin: 0px;
         padding: 0px;
         overflow-x: hidden; 
     }
-    
+
     body {
-        position: relative;
+        position: relative;          /* To remove unnecessary bottom white space */
       }
       
     .container{
