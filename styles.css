@@ -37,6 +37,8 @@ body{
     border-radius: 15px 0px 0px 15px;   /* For rounded corners */
 }
 
+/* where content starts */
+
 #content{
     background: hsl(0, 0%, 100%);
     grid-area: content1 ;
@@ -44,15 +46,18 @@ body{
 }
 
 .container2{
+    padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0fr 0fr 0fr 0fr 0fr;
+    min-width: 0;
+    min-height: 0;
     grid-template-areas: 
     "cat cat"
     "title title"
     "desc desc"
     "price bprice"
-    "button button"
+    "button button";
 }
 
 #category{
@@ -60,9 +65,27 @@ body{
     grid-area: cat;
 }
 
+#category > p{
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
 #title{
     background: hsl(0, 0%, 100%);
     grid-area: title;
+}
+
+#title > p {
+    margin-top: 30px;
+    margin-left: 10px;
+    line-height: 0;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: hsl(212, 21%, 14%);
 }
 
 #description{
@@ -70,9 +93,27 @@ body{
     grid-area: desc;
 }
 
+#description > p{
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
 #price{
     background: hsl(0, 0%, 100%);
     grid-area: price;
+}
+
+#price > p{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 32px;
+    color: hsl(158, 36%, 37%);
 }
 
 #bprice{
@@ -80,10 +121,48 @@ body{
     grid-area: bprice;
 }
 
+#bprice > p{
+    margin-left: 24px;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
 #button{
     background: hsl(0, 0%, 100%);
     grid-area: button;
 }
+
+#button > button{
+    margin-top: -10px;
+    margin-left: 10px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    width: 237px;
+    padding: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#button > button:hover {
+    background-color: hsl(158, 47%, 18%);
+}
+
+button span {
+    margin-top: -8px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+/* where content ends */
+
 #rightspace{
     background:  hsl(30, 38%, 92%);
     grid-area:rightspace;
