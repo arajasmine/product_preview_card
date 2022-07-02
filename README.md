@@ -10,11 +10,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -39,6 +34,8 @@ Mobile Views :
 
 - Solution URL: https://github.com/arajasmine/product_preview_card
 - Live Site URL: https://arajasmine.github.io/product_preview_card/
+
+## My Process
 
 ### Built with
 
