@@ -23,12 +23,12 @@ Users should be able to:
 ### Screenshots
 
 Desktop View :
-![]./Screenshots/desktop_view.jpg
+![Desktop View](./Screenshots/desktop_view.jpg)
 
 Mobile Views :
-./Screenshots/mobile_view1.jpg
-./Screenshots/mobile_view2.jpg
-./Screenshots/mobile_view3.jpg
+![Mobile1](./Screenshots/mobile_view1.jpg)
+![Mobile2](./Screenshots/mobile_view2.jpg)
+![Mobile3](./Screenshots/mobile_view3.jpg)
 
 ### Links
 
